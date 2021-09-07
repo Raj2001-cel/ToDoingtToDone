@@ -77,6 +77,14 @@ function App() {
             </>)
           }}> 
           </Route>
+          <Route exact path="/ToDoingtToDone" render={()=>{
+            return(
+            <>
+            <AddTodo addTodo={addTodo} />
+            <Todos todos={todos} onDelete={onDelete} /> 
+            </>)
+          }}> 
+          </Route>
           <Route exact path="/about">
             <About />
           </Route> 
